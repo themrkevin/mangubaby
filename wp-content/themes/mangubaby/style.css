@@ -1,0 +1,545 @@
+/*
+	Theme Name: Mangubaby
+	Theme URI: www.mangubaby.com
+	Description: 
+	Author: Kevin Mangubat
+	Version: 1.0
+	License: 
+	License URI: 
+	Tags: 
+*/
+
+/* ------------------ *\
+		Webfonts
+\* ------------------ */
+
+@font-face {
+    font-family: 'maiden_orangeregular';
+    src: url('font/maidenorange-webfont.eot');
+    src: url('font/maidenorange-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/maidenorange-webfont.woff') format('woff'),
+         url('font/maidenorange-webfont.ttf') format('truetype'),
+         url('font/maidenorange-webfont.svg#maiden_orangeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'idolwildregular';
+    src: url('font/idolwild-webfont.eot');
+    src: url('font/idolwild-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/idolwild-webfont.woff') format('woff'),
+         url('font/idolwild-webfont.ttf') format('truetype'),
+         url('font/idolwild-webfont.svg#idolwildregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-size:14px;
+	background:url(img/the-parents.png) center top no-repeat, url(img/polka-dots-gradient.png) left top repeat-x, url(img/grunge-bg.jpg) #efefef center top repeat;
+/*	background:url(img/dot-grunge.jpg) #efefef center top repeat;*/
+	color:#796551;
+}
+
+	.lt-ie9 body {
+		background:url(img/grunge-bg.jpg) #efefef center top repeat;
+	}
+
+/* ------------------ *\
+	Typography
+\* ------------------ */
+
+h1,
+.post-title {
+	font: normal 36px maiden_orangeregular;
+	line-height:1.2em;
+	word-spacing: normal;
+	position: relative;
+}
+
+.post-title {
+	background:url(img/title-dots.png) right center no-repeat;
+	display:inline-block;
+	padding:6px 24px 0 0;
+	margin:10px 0 0 0;
+}
+
+h2 {
+	font: normal 22px idolwildregular;
+	line-height:1.2em;
+	/*word-spacing: -0.2em;*/
+	margin:0 0 10px 0;
+}
+
+h2 strong {
+	font-family: maiden_orangeregular;
+	font-size: 110%;
+	word-spacing: normal;
+}
+
+h1 a,
+h2 a {
+	color:#796551;
+}
+
+h3 {
+	font-size:14px;
+	line-height:1.2em;
+	margin:0 0 10px 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* ------------------ *\
+	General Styles
+\* ------------------ */
+
+.wrapper {
+	background:url(img/bedge-grunge-bg.png) #efefef center top repeat;
+	box-shadow:inset 0 0 10px #efefef, 0 0 20px #666;
+	-webkit-box-shadow:inset 0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(0,0,0,0.25);
+	   -moz-box-shadow:inset 0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(0,0,0,0.25);
+			box-shadow:inset 0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(0,0,0,0.25);
+	position:relative;
+	min-height:900px;
+}
+
+.wrapper:before {
+	content:'';
+	background:url(img/belly.png) left top no-repeat;
+	width:67px;
+	height:142px;
+	position:absolute;
+	left: -41px;
+	top: 282px;
+}
+
+.wrapper:after {
+	content:'';
+	background:url(img/finger-frame.png) right top no-repeat;
+	width:140px;
+	height:503px;
+	position:absolute;
+	right:-48px;
+	top:0;
+}
+
+	.lt-ie9 .wrapper:before,
+	.lt-ie9 .wrapper:after {
+		display:none;
+	}
+
+/*.the-parents {
+	background:;
+}*/
+
+#header {
+
+}
+
+.header-junk {
+	border-bottom:2px solid #796551;
+	padding:0 0 20px;
+	margin:0 0 20px;
+}
+
+#mid {
+	margin:0 auto 20px;
+}
+
+.padding3 {
+	padding:3%;
+}
+
+.padding-standard {
+	padding:2%;
+}
+
+.corner-cute {
+	border-radius:4px;
+}
+
+.bg-standard {
+	background:#fff;
+}
+
+.boxshadow {
+	box-shadow:0 1px 5px #666;
+	-webkit-box-shadow:0 1px 5px rgba(0,0,0,0.25);
+	   -moz-box-shadow:0 1px 5px rgba(0,0,0,0.25);
+			box-shadow:0 1px 5px rgba(0,0,0,0.25);
+}
+
+.margin-standard {
+	margin:0 0 20px;
+}
+
+/*.post-entry {
+	border-bottom:1px solid rgba(121,101,81,0.5);
+}*/
+
+.entry-meta {
+	font-size:90%;
+}
+
+article img.size-full {
+	border-radius:4px;
+	background: #dedbd4;
+	border:5px solid #dedbd4;
+	box-shadow:0 2px 10px #666;
+	margin:0 0 10px;
+	-webkit-box-shadow:0 2px 10px rgba(0,0,0,0.25);
+	   -moz-box-shadow:0 2px 10px rgba(0,0,0,0.25);
+			box-shadow:0 2px 10px rgba(0,0,0,0.25);
+	width:100%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+.poll-img-container {
+	border-radius:4px;
+	background: #dedbd4;
+	border:5px solid #dedbd4;
+	box-shadow:0 2px 10px #666;
+	-webkit-box-shadow:0 2px 10px rgba(0,0,0,0.25);
+	   -moz-box-shadow:0 2px 10px rgba(0,0,0,0.25);
+			box-shadow:0 2px 10px rgba(0,0,0,0.25);
+	margin:0 0 10px;
+}
+
+.poll-img-container img {
+	border-radius:4px;
+	width:100%;
+}
+
+.a-block {
+	display:block;
+	position:relative;
+	cursor:pointer;
+}
+
+.single-post .a-block {
+	cursor:default;
+}
+
+.view-image {
+	position:absolute;
+	bottom:20px;
+	right:10px;
+	z-index:101;
+	cursor:pointer;
+}
+
+.wp-caption {
+	border-radius:4px;
+	background: #dedbd4;
+	border:5px solid #dedbd4;
+	box-shadow:0 2px 10px #666;
+	-webkit-box-shadow:0 2px 10px rgba(0,0,0,0.25);
+	   -moz-box-shadow:0 2px 10px rgba(0,0,0,0.25);
+			box-shadow:0 2px 10px rgba(0,0,0,0.25);
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	margin:0 0 10px;
+}
+
+.wp-caption img.size-full {
+	background:none;
+	border:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	   -moz-box-shadow:none;
+			box-shadow:none;
+	margin:0;
+}
+
+.wp-caption p {
+	margin:5px 0 0;
+}
+
+/* ------------------ *\
+	Contact Form
+\* ------------------ */
+
+form {
+
+}
+
+form ul {
+	margin:0;
+	padding:0;
+}
+
+form li {
+	list-style:none;
+}
+
+/* ------------------ *\
+	Menu Pills
+\* ------------------ */
+
+.main-menu {
+	margin:0 0 0 -10px;
+}
+
+.nav-pills > li {
+	padding:0 10px 0 0;
+}
+
+.nav-pills > li > a {
+	color: #796551;
+	font: normal 22px idolwildregular;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	-webkit-border-radius: 7px;
+	 -moz-border-radius: 7px;
+	      border-radius: 7px;
+}
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+	color: #796551;
+	background-color: #efefef;
+}
+
+/* ------------------ *\
+		Buttons
+\* ------------------ */
+
+.btn-baby.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-baby {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #87cced;
+  *background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #87cced, #10a3ed);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#87cced), to(#10a3ed));
+  background-image: -webkit-linear-gradient(top, #87cced, #10a3ed);
+  background-image: -o-linear-gradient(top, #87cced, #);
+  background-image: linear-gradient(to bottom, #10a3ed, #87cced);
+  background-repeat: repeat-x;
+  border-color: #10a3ed #10a3ed #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff10a3ed', endColorstr='#ff0044cc', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-baby:hover,
+.btn-baby:focus,
+.btn-baby:active,
+.btn-baby.active,
+.btn-baby.disabled,
+.btn-baby[disabled] {
+  color: #ffffff;
+  background-color: #87cced;
+  *background-color: #87cced;
+}
+
+.btn-baby:active,
+.btn-baby.active {
+  background-color: #003399 \9;
+}
+
+/* ------------------ *\
+		Timers
+\* ------------------ */
+
+#ujiCountdown {
+	margin:0 auto;
+}
+
+.counter {	
+	color:#fff;
+	text-shadow:0 0 20px #796551;
+	padding:0 2%;
+	font: normal 40px idolwildregular;
+	line-height:1em;
+	word-spacing: -0.2em;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.header-junk .counter {
+	text-align: left;
+}
+
+.week-status {
+	padding:0;
+}
+
+.week-status p {
+	margin:0;
+	font-size:30px;
+}
+
+.week-status b {
+	font: normal 50px maiden_orangeregular;
+	line-height: normal;
+	word-spacing: normal;
+	display:inline-block;
+}
+
+.dcountdown {
+	font: normal 150px maiden_orangeregular;
+	line-height: 1em;
+	word-spacing: normal;
+	display:inline-block;
+	height:125px;
+}
+
+/* ------------------ *\
+		Archive
+\* ------------------ */
+
+.archive .post {
+	margin-bottom:20px;
+	border-bottom:1px solid #ddd;
+	padding:2%;
+}
+
+/* ------------------ *\
+	Baby Poll
+\* ------------------ */
+
+.mangubaby #yop-poll-container-2 {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	width:100%;
+	max-width:275px;
+}
+
+.mangubaby-poll ul {
+	margin:0;
+	padding:0;
+}
+
+.mangubaby-poll li {
+	list-style: none;
+	padding:2%;
+	border-radius: 4px;
+	max-width:95%;
+}
+
+.mangubaby-poll li:hover {
+	background:rgb(121,101,81);
+	background:rgba(121,101,81,0.25);
+}
+
+.mangubaby-poll input[type='radio'] {
+	width:10%;
+	float:left;
+}
+
+.mangubaby-poll label {
+	width:70%;
+	float:left;
+}
+
+.mangubaby-poll label input {
+	width:100%;
+}
+
+.mangubaby-poll .poll-li-result label {
+	width:auto;
+}
+
+.mangubaby-footer {
+	padding:2%;
+}
+
+.mangubaby-poll .btn {
+	margin-bottom:10px;
+}
+
+.yop_poll_vote_button {
+	border:none;
+	background:none;
+	margin:0;
+	padding:0 20px;
+	color:#666;
+}
+
+@media (max-width: 979px) {
+	body {
+		background:url(img/the-parents-tablet.png) center top no-repeat, url(img/polka-dots-gradient.png) left top repeat-x, url(img/grunge-bg.jpg) #efefef center top repeat;
+	}
+
+	.week-status p {
+		font-size:25px;
+	}
+
+	.week-status b {
+		font-size: 40px;
+	}
+}
+
+@media (max-device-width: 979px) {
+	body {
+		background:url(img/polka-dots-gradient.png) left top repeat-x, url(img/grunge-bg.jpg) #efefef center top repeat;
+	}
+
+	h2 {
+		word-spacing: normal;
+	}
+
+	.wrapper:before {
+		display:none;
+	}
+
+	.wrapper:after {
+		display:none;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		background:url(img/polka-dots-gradient.png) left top repeat-x, url(img/grunge-bg.jpg) #efefef center top repeat;
+		padding:0;
+	}
+
+	.wrapper:before {
+		display:none;
+	}
+
+	.wrapper:after {
+		display:none;
+	}
+
+	.counter {
+		text-align: left;
+	}
+}
+
+@media (max-device-width: 767px) {
+	h2 {
+		word-spacing: normal;
+	}
+
+	.brand {
+		margin:10px 0;
+	}
+
+	.wrapper {
+		min-height:auto;
+	}
+
+	.main-menu {
+		margin:0;
+	}
+
+	.nav-pills > li > a {
+		font-size:21px;
+	}
+}
